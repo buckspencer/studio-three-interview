@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import HeroHeader from "./components/HeroHeader";
 import Verdicts from "./components/Verdicts";

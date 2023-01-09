@@ -1,13 +1,16 @@
-import heroBackground from "../images/OOOB0222 1 (1).png";
-import heroLogo from "../images/talf-final-logo-2022-01 1.png";
+import heroBackground from "../images/header-standin.png";
+// import heroLogo from "../images/talf-final-logo-2022-01 1.png";
 
 export default function HeroHeader() {
   return (
     <div className="bg-white">
       <main>
         <div>
-          {/* Hero card */}
-          <div className="relative">
+          <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <img className="" src={heroBackground} alt="Hero Background" />
+          </div>
+          {/* Started some of the buildout here. */}
+          {/* <div className="relative">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-white" />
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="relative shadow-xl sm:overflow-hidden ">
@@ -67,7 +70,7 @@ export default function HeroHeader() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </main>
     </div>
