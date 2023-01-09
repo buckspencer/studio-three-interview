@@ -49,7 +49,7 @@ const Verdicts = () => {
           </h2>
         </div>
         <div className="mt-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-4 ">
             {features.map((feature) => (
               <div key={feature.name} className="pt-6">
                 <div className="flow-root rounded-lg bg-white pb-8 drop-shadow-lg">
