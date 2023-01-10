@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Cormorant: ["Cormorant", "sans-serif"],
+        Cormorant: ["Cormorant", "woff2"],
+        body: ["Open Sans", "sans-serif"],
       },
     },
   },

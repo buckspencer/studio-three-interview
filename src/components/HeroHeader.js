@@ -6,7 +6,7 @@ export default function HeroHeader() {
     <div className="bg-white">
       <main>
         <div>
-          <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="mb-10">
             <img className="" src={heroBackground} alt="Hero Background" />
           </div>
           {/* Started some of the buildout here. */}

@@ -23,12 +23,12 @@ const features = [
 const Verdicts = () => {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 lg:py-40">
-        <div className="mx-auto max-w-3xl text-center mb-20 ">
-          <h2 className="text-3xl font-bold font-Cormorant tracking-tight text-gray-900 sm:text-4xl">
+      <div className="mx-auto px-8 py-20">
+        <div className="mx-auto max-w-[506px] text-center mb-32">
+          <h2 className="mx-10 font-Cormorant text-black sm:text-4xl font-light">
             Lorem Ipsum Dolor Sit Amit
           </h2>
-          <p className="mx-auto mt-4 max-w-xl font-Cormorant text-lg leading-8 text-gray-600">
+          <p className="mx-12 mt-4 font-body text-xs text-justify leading-[23.58px] text-black">
             The Alvarez Law Firm is a trial practice law firm representing
             individuals and the families of those injured due to the negligence
             of others. The firm has an extensive background and successful track
@@ -40,43 +40,49 @@ const Verdicts = () => {
           </p>
         </div>
         <hr />
-        <div>
-          <p className="mt-4 max-w-xl font-Cormorant text-lg leading-8 text-gray-600 text-left">
-            Our Results
-          </p>
-          <h2 className="text-3xl font-Cormorant tracking-tight text-gray-900 sm:text-4xl text-left">
+        <p className="mt-8 max-w-xl font-Cormorant text-lg leading-8 text-black text-left font-light">
+          Our Results
+        </p>
+        <div className="flex justify-between">
+          <h2 className="flex w-50% text-3xl font-Cormorant text-black sm:text-4xl text-left font-light">
             Over $500,000,000 in Verdicts.
           </h2>
+          <button
+            href="#"
+            className="inline-flex px-2.5 py-1.5 border items-center border-transparent bg-[#4B524A] text-xs font-Cormorant text-white"
+          >
+            View All Results
+          </button>
         </div>
-        <div className="mt-20">
-          <div className="grid grid-cols-4 ">
-            {features.map((feature) => (
-              <div key={feature.name} className="pt-6">
-                <div className="flow-root rounded-lg bg-white pb-8 drop-shadow-lg">
-                  <div className="-mt-6">
-                    <div className="pt-20">
-                      <span className="inline-flex items-center justify-center bg-white">
-                        <img
-                          className="object-cover"
-                          src={verdictIcon}
-                          alt="Hero Background"
-                          width="88px"
-                          height="74px"
-                        />
-                      </span>
-                    </div>
-                    <h3 className="mt-8 text-lg font-Cormorant  text-gray-900">
-                      {feature.name}
-                    </h3>
-                    <p className="mt-5 text-sm font-Cormorant leading-7 text-gray-600">
-                      {feature.description}
-                    </p>
+        <div className="grid grid-cols-4 gap-8">
+          {features.map((feature) => (
+            <div key={feature.name} className="pt-6">
+              <div className="flow-root bg-white pb-8 shadow">
+                <div className="-mt-6">
+                  <div className="pt-20 pb-3">
+                    <span className="inline-flex items-center justify-center bg-white">
+                      <img
+                        className="object-cover"
+                        src={verdictIcon}
+                        alt="Hero Background"
+                        width="88px"
+                        height="74px"
+                      />
+                    </span>
                   </div>
+                  <hr style={{ width: "50%", margin: "auto" }} />
+                  <h3 className="mt-4 text-lg font-Cormorant  text-gray-900">
+                    {feature.name}
+                  </h3>
+                  <p className="mt-2 text-sm font-['Europa-Regular'] leading-7 text-[#494949]">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
+        <hr className="mt-10" />
       </div>
     </div>
   );
